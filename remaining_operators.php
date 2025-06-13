@@ -25,6 +25,16 @@ echo '<br>';
  var_dump($f === $c);    // output bool(false)
  echo '<br>';
  var_dump($d === $d);  // output bool(true)
+echo '<br>'
+
+
+ // Logical Operator
+ if($e > 8){
+    echo $e.'is greater than 8';
+ }
+ else {
+    echo '7 is less than 8';
+ }
 
 
 ?>
