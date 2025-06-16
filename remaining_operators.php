@@ -25,16 +25,29 @@ echo '<br>';
  var_dump($f === $c);    // output bool(false)
  echo '<br>';
  var_dump($d === $d);  // output bool(true)
-echo '<br>'
+echo '<br>';
 
 
  // Logical Operator
- if($e > 8){
-    echo $e.'is greater than 8';
- }
- else {
-    echo '7 is less than 8';
- }
+if($e > 8){
+    echo " is greater than 8";
+}
+else {
+    echo "7 is less than 8";
+}
+echo '<br>';
 
+$pass = 50;
 
+if($pass >= 50){
+   if($pass >= 80){
+      echo 'You got an A+ so, you are eligile <br>';
+   }
+   else{
+      echo 'You are not eligible for this course <br>';
+   }
+}
+else {
+   echo 'You got a C grade <br>';
+}
 ?>
