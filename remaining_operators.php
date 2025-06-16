@@ -44,10 +44,10 @@ if($pass >= 50){
       echo 'You got an A+ so, you are eligile <br>';
    }
    else{
-      echo 'You are not eligible for this course <br>';
+      echo 'You are not eligible for this course';
    }
 }
 else {
-   echo 'You got a C grade <br>';
+   echo 'You got a C grade';
 }
 ?>
