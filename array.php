@@ -32,4 +32,26 @@ foreach($veg as $key => $value) {
     }
 };
 
+
+
+echo '<br>';
+// while loop
+$a = 5;
+while($a <= 10){
+    echo $a.')hello world'."<br>";
+    $a++; 
+}
+
+echo '<br>';
+$c = 5;
+while($c <= 10){
+    echo $c.')2 increment loop pak'."<br>";
+    $c = $c + 2; 
+}
+
+
+
+ 
+
+
 ?>
