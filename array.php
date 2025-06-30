@@ -40,17 +40,22 @@ $a = 5;
 while($a <= 10){
     echo $a.')hello world'."<br>";
     $a++; 
-}
+};
 
 echo '<br>';
 $c = 5;
 while($c <= 10){
     echo $c.')2 increment loop pak'."<br>";
     $c = $c + 2; 
+};
+
+echo '<br>';
+// for loop and generate a table
+echo "<h4>Table of 10</h4>";
+$t = 10;
+for($i = 1; $i <= 10; $i++){
+    echo $t."*".$i."=".$i*$t."<br>";
 }
-
-
-
  
 
 
