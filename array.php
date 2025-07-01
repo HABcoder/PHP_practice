@@ -55,8 +55,15 @@ echo "<h4>Table of 10</h4>";
 $t = 10;
 for($i = 1; $i <= 10; $i++){
     echo $t."*".$i."=".$i*$t."<br>";
-}
+};
+
+ echo '<br>';
  
-
-
+// nested loop
+for($y = 1; $y <= 100 ; $y = $y + 10){
+    for($z = $y ; $z <= $y + 10 ; $z++ ){
+      echo $z." ";
+    }
+    echo '<br>';
+}
 ?>
