@@ -93,4 +93,40 @@ $values = array("1", "2", "3");
 $combined = array_combine($keys, $values);
 print_r($combined);
 
+echo '<br>';
+//array_slice  center sy value lata hai 
+$array_slice = array_slice($a, 1, 2);
+print_r($array_slice);
+
+echo '<br>';
+// array_splice() center sy value change karna ho?
+$c1 = array("Tania","Wania", "Sara","Zara");
+$c3 = array("Sania","Rania", "Rida","Zavhir");
+
+// delete karnay ky liye
+array_splice($c1, 2);
+print_r($c1);
+
+echo '<br>';
+// single value delete karnay ky liye
+array_splice($c3, 3, 3);
+print_r($c3);
+
+echo '<br>';
+// insert karnay ky liye
+array_splice($c1, 2, 1, $c3);
+print_r($c1);
+echo '<br>';
+
+// explode string ko array me convert karta hai
+$str  = "HTML,CSS,PHP,MySQL";
+$explode = explode(",",$str);
+echo $explode[0].'<br>';
+print_r($explode);
+
+echo '<br>';
+# implode array ko string me convert karta hai
+$colr = array("Welcome", "back", "Again", "this is", "an implode", "function");
+$implode = implode(" ", $colr);
+echo $implode;
 ?>
