@@ -1,12 +1,10 @@
 <?php
 include 'connection.php';
 ?>
-
 <?php
 $sql = "SELECT * FROM student";
 $result = mysqli_query($conn, $sql);
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,7 +23,6 @@ $result = mysqli_query($conn, $sql);
             <th>email</th>
             <th>password</th>
             <th>comment</th>
-            <th>Action</th>
         </tr>
         <?php
         if($result){
@@ -42,26 +39,10 @@ $result = mysqli_query($conn, $sql);
             <td>$emails</td>
             <td>$pass</td>
             <td>$comments </td>
-            <td><a href='' class='btn btn-primary'>Edit</a> <a href='view.php?delid=<?php echo $row['id'] ?>' class='btn btn-danger'>Remove</a></td>
-        </tr>";
-
+            </tr>";
             }
         }
         ?>
     </table>
 </body>
 </html>
-<?php 
- if(isset($_GET['delid'])) {
-    
-    $idget = mysqli_real_escape_string($conn, $_GET['Delid']);
-
-    $delete = "DELETE FROM resturant WHERE custid = '$idget'";
-    $query = mysqli_query($con, $delete);
-    if($query) {
-        echo "<script>alert('Record Deleted'); window.location.href='view.php';</script>";
-        exit();
-    }
-    }
-
-?>
